@@ -1,0 +1,61 @@
+.SearchListContainer {
+  padding: 1rem;
+  margin: auto;
+}
+
+.SearchListItem {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.SearchListItem img {
+  margin-right: 15px;
+}
+
+.SearchListDetails {
+  max-width: 450px;
+}
+
+.SearchListContainer h3 {
+  margin-bottom: 1rem;
+}
+
+.SearchListTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.SearchListDesc {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.SearchListChannel {
+  margin-top: 10px;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 532px) {
+  .SearchListItem img {
+    width: 45vw;
+    /* height: 100px; */
+  }
+
+  .SearchListDetails {
+    width: 45vw;
+  }
+
+  .SearchListDesc {
+    display: none;
+  }
+
+  .SearchListTitle {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+   
+  .SearchListChannel {
+    margin-top: 10px;
+    font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,85 @@
+/* .videoList {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.videoItem {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.videoItem img {
+  width: 200px;
+  height: 110px;
+  margin-right: 10px;
+}
+
+.details {
+  width: 200px;
+}
+
+@media (max-width: 420px) {
+  .videoItem img {
+    width: 38vw;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .details {
+    width: 38vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+  }
+
+  .vidchannel {
+    font-size: 0.6rem;
+  }
+} */
+
+.RelatedVideoList {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ImgDetails {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.ImgDetails img, .ImgDetails div {
+  width: 200px;
+}
+
+.ImgDetails img {
+  margin-right: 10px;
+}
+
+.RelatedVideoSnippet {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.RelatedChannelTitle {
+  margin-top: 5px;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 443px) {
+  .ImgDetails img, .ImgDetails div {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 530px) {
+  .ImgDetails img, .ImgDetails div {
+    width: 45vw;
+  }
+
+  .renderedVideoList {
+    padding: 0 1rem;
+  }
+}

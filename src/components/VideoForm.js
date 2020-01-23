@@ -1,6 +1,7 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import './VideoForm.css'
+import history from '../history'
 
 class VideoForm extends React.Component {
   renderInput = ({ input, label, type, meta: { touched, error } }) => {
@@ -14,7 +15,8 @@ class VideoForm extends React.Component {
 
   onSubmit = formValues => {
     this.props.onSubmit(formValues)
-    this.props.reset()
+    // this.props.reset()
+    history.push(`/searchresults/${formValues.searchTerm}`)
   }
 
   render() {

@@ -3,6 +3,7 @@ import VideoForm from './VideoForm'
 import './Header.css'
 import { connect } from 'react-redux'
 import { addVideos } from '../actions'
+import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
   onSubmit = formValues => {
@@ -12,10 +13,12 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-        <div>
-          <i className="fab fa-youtube"></i>{' '}
-          <span style={{ fontWeight: 'bold' }}>MeTube</span>
-        </div>
+        <Link to="/" style={{textDecoration: 'none', color:'#000'}}>
+          <div>
+            <i className="fab fa-youtube"></i>{' '}
+            <span style={{ fontWeight: 'bold' }}>MeTube</span>
+          </div>
+        </Link>
         <VideoForm onSubmit={this.onSubmit} />
       </div>
     )

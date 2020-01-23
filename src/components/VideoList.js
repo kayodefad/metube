@@ -7,7 +7,7 @@ import './VideoList.css'
 
 class VideoList extends React.Component {
   componentDidMount() {
-    this.props.addVideos('best of messi')
+    this.props.addVideos('2020 movie and tv series trailers')
   }
 
   renderList = () => {
@@ -17,14 +17,22 @@ class VideoList extends React.Component {
 
     return this.props.videos.map(video => {
       return (
-        <Link to={`/play/${video.id.videoId}`} style={{textDecoration:'none'}}>
-          <div className="VideoItem" key={video.id.videoId}>
+        <Link
+          to={`/play/${video.id.videoId}`}
+          style={{ textDecoration: 'none' }}
+          key={video.id.videoId}
+        >
+          <div className="VideoItem">
             <img
               src={video.snippet.thumbnails.medium.url}
               alt={video.snippet.title}
             />
-            <div className="title">{video.snippet.title}</div>
-            <div className="channel">{video.snippet.channelTitle}</div>
+            <div className="videoDesc">
+              <div className="vidtitle">{video.snippet.title}</div>
+              <div className="channel">
+                <i className="fas fa-circle"></i> {video.snippet.channelTitle}
+              </div>
+            </div>
           </div>
         </Link>
       )
