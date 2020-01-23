@@ -1,6 +1,6 @@
 {
-  "homepage": "http://kayodefad.github.io/Metube",
-  "name": "random-got-quote",
+  "homepage": "http://kayodefad.github.io/metube",
+  "name": "videoapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
