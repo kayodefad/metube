@@ -40,7 +40,7 @@ const validate = formValues => {
   const errors = {}
 
   if (!formValues.searchTerm) {
-    errors.searchTerm = ' '
+    errors.searchTerm = ''
   }
 
   return errors

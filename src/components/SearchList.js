@@ -5,16 +5,12 @@ import { Link } from 'react-router-dom'
 import Header from './Header'
 import './SearchList.css'
 import { getFormValues } from 'redux-form'
-import VideoForm from './VideoForm'
 
 class SearchList extends React.Component {
   componentDidMount = () => {
-    // if (this.props.formStates) {
-    //   const { searchTerm } = this.props.formStates
-    //   this.props.addVideos(searchTerm)
-    // }
     this.props.addVideos('davido')
   }
+
   renderList = () => {
     return this.props.videos
       .filter(video => video.id.videoId)
