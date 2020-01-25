@@ -7,9 +7,9 @@ import './SearchList.css'
 import { getFormValues } from 'redux-form'
 
 class SearchList extends React.Component {
-  componentDidMount = () => {
-    this.props.addVideos('davido')
-  }
+  // componentDidMount = () => {
+  //   this.props.addVideos('davido')
+  // }
 
   renderList = () => {
     return this.props.videos
