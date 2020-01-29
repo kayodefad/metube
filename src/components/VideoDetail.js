@@ -13,8 +13,8 @@ class VideoDetail extends React.Component {
 
     return (
       <div className="VideoDetailsContainer">
-        <div>
-          <iframe src={videoSrc} title="video player" allowFullScreen />
+        <div className="iframevid">
+          <iframe src={videoSrc} title="video player" allowFullScreen frameBorder="0" />
         </div>
         <div className="description">
           <h4>{video.snippet.title}</h4>

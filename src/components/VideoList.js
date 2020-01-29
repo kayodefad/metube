@@ -7,7 +7,7 @@ import './VideoList.css'
 
 class VideoList extends React.Component {
   componentDidMount() {
-    this.props.addVideos('2020 movie and tv series trailers')
+    this.props.addVideos('2020 tv series and movie trailers')
   }
 
   renderList = () => {

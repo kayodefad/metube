@@ -9,6 +9,7 @@ import VideoItem from './RelatedVideoList'
 class VideoPlay extends React.Component {
   componentDidMount() {
     this.props.playVideo(this.props.match.params.id)
+    window.scrollTo(0, 0)
   }
 
   render() {
